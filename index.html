@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"><a href="/">Logo</a></div>
+      <div>
+        <div id="burger-menu">
+          <span></span>
+        </div>
+        <div id="menu">
+          <ul>
+            <li><a href="#page1">Item 1</a></li>
+            <li><a href="#page2">Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <form id="destination-form">
+      <div class="bottom-content">
+        <div class="title">Stay with us</div>
+        <div class="main">
+          <select id="destination">
+            <option value="" selected>Select a Destination</option>
+            <option value="orlando">Orlando, FL</option>
+            <option value="melbourne">Melbourme Beach, FL</option>
+          </select>
+
+          <div class="dropdown">
+            <div class="dropdown-toggle" id="calendar-toggle">
+              <span id="dateFrom">Check in</span>
+              <span class="arrow">&#10095;</span>
+              <span id="dateTo">Check out</span>
+            </div>
+            <div id="calendar-menu" style="display: none">
+              <div class="month">
+                <ul>
+                  <li id="prev">&#10094;</li>
+                  <li id="month"></li>
+                  <li id="year"></li>
+                  <li id="next">&#10095;</li>
+                </ul>
+              </div>
+
+              <ul id="weekdays">
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                <li>Sun</li>
+              </ul>
+
+              <ul id="days"></ul>
+              <div class="controls">
+                <button type="button" id="calendar-submit" disabled>Ok</button>
+                <button type="button" id="calendar-cancel">Cancel</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" id="submit-button" disabled>Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="loader" id="loader" style="display: none">
+        <div class="lds-dual-ring"></div>
+      </div>
+    </form>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
